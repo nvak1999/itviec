@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 const Login = ({ user, setUser, show }) => {
   let history = useHistory();
-  // let space = "  ";
+  let space = "  ";
   // const handleClick = () => {
   //   history.push("/");
   // };
@@ -69,7 +69,8 @@ const Login = ({ user, setUser, show }) => {
           </div>
           <div className="form-group">
             <label title="" className="form-check-label">
-              <input type="checkbox"></input>Check me out
+              <input type="checkbox"> </input>
+              {space} Check me out
             </label>
           </div>
           <button type="submit" className="btn btn-danger">
