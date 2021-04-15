@@ -27,21 +27,23 @@ const JobDetail = () => {
         </div>
         <div className="jobdetail2">
           <h1>{data.title}</h1>
-          {/* <div className="detail-tags2">
-            {data.tags.map((item) => {
-              return <p>{item}</p>;
-            })}
-          </div> */}
+          <div className="detail-tags2">
+            {data &&
+              data.tags.map((item) => {
+                return <p>{item}</p>;
+              })}
+          </div>
           <p>$ {data.salary}</p>
           <p>
             {data.city} District {data.district}
           </p>
           <h2>Benefit</h2>
-          {/* <ul>
-            {data.benefits.map((a) => {
-              return <li>{a}</li>;
-            })}
-          </ul> */}
+          <ul>
+            {data &&
+              data.benefits.map((a) => {
+                return <li>{a}</li>;
+              })}
+          </ul>
           <h2>Description</h2>
           <p>{data.description}</p>
 
