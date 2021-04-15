@@ -5,7 +5,7 @@ import Navbarr from "./Navbarr";
 
 const Home = () => {
   const [jobList, setjobList] = useState([]);
-  // let json = `https://github.com/nvak1999/itviec/blob/[main|master]/db.json`;
+
   let history = useHistory();
   const getJobs = async () => {
     // let url = ` http://localhost:3001/jobs`;
