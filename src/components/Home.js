@@ -9,7 +9,7 @@ const Home = () => {
   let history = useHistory();
   const getJobs = async () => {
     // let url = ` http://localhost:3001/jobs`;
-    let url = `https://github.com/nvak1999/itviec/blob/jobs/db.json`;
+    let url = `https://my-json-server.typicode.com/nvak1999/itviec/jobs`;
     const res = await fetch(url);
     const data = await res.json();
     setjobList(data);

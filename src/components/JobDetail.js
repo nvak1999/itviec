@@ -7,7 +7,7 @@ const JobDetail = () => {
   const [data, setData] = useState("");
   const getSingleJob = async () => {
     // let url = `http://localhost:3001/jobs/${id}`;
-    let url = `https://github.com/nvak1999/itviec/blob/jobs/${id}/db.json`;
+    let url = `https://my-json-server.typicode.com/nvak1999/itviec/jobs/${id}`;
     const res = await fetch(url);
     const data = await res.json();
     setData(data);
