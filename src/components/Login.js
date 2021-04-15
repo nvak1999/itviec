@@ -65,8 +65,7 @@ const Login = ({ user, setUser, show }) => {
           </div>
           <div className="form-group">
             <label title="" className="form-check-label">
-              <input type="checkbox"> </input>
-              Check me out
+              <input type="checkbox"></input>Check me out
             </label>
           </div>
           <button type="submit" className="btn btn-danger">
