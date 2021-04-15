@@ -5,22 +5,22 @@ import Navbarr from "./Navbarr";
 
 const Home = () => {
   const [jobList, setjobList] = useState([]);
+  // let json = `https://github.com/nvak1999/itviec/blob/[main|master]/db.json`;
   let history = useHistory();
   const getJobs = async () => {
-    let url = ` http://localhost:3001/jobs`;
+    // let url = ` http://localhost:3001/jobs`;
+    let url = `https://github.com/nvak1999/itviec/blob/jobs/db.json`;
     const res = await fetch(url);
     const data = await res.json();
     setjobList(data);
     console.log(data);
   };
-
   useEffect(() => {
     getJobs();
   }, []);
   const handleClick = () => {
     history.push("/login");
   };
-
   return (
     <div>
       <Navbarr />

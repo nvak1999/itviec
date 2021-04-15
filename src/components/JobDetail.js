@@ -6,7 +6,8 @@ const JobDetail = () => {
   const { id } = useParams();
   const [data, setData] = useState("");
   const getSingleJob = async () => {
-    let url = `http://localhost:3001/jobs/${id}`;
+    // let url = `http://localhost:3001/jobs/${id}`;
+    let url = `https://github.com/nvak1999/itviec/blob/jobs/${id}/db.json`;
     const res = await fetch(url);
     const data = await res.json();
     setData(data);
